@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Boniface &amp; Paulina Okafor Memorial Hospital management platform — a case study by Nikkayo Williams." />
+    <meta name="theme-color" content="#eeff41" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Hospital Management Platform — Nikkayo Williams" />
+    <meta property="og:description" content="An ASP.NET Core MVC platform connecting hospital information, patient services, clinical workflows, and administration." />
+    <meta name="twitter:card" content="summary" />
+    <title>Hospital Management Platform — Nikkayo Williams</title>
+    <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+    <script src="../script.js" defer></script>
+    <noscript><style>.reveal { opacity: 1; transform: none; }</style></noscript>
+  </head>
+  <body class="case-page">
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="progress" aria-hidden="true"></div>
+
+    <header class="site-header case-header">
+      <a class="wordmark" href="../index.html" aria-label="Return to portfolio">NW<span>®</span></a>
+      <nav aria-label="Project navigation">
+        <a href="../index.html#work">Work</a>
+        <a href="../index.html#services">Services</a>
+        <a href="../index.html#about">About</a>
+      </nav>
+      <a class="availability" href="../index.html#contact">Start a project</a>
+    </header>
+
+    <main id="main">
+      <section class="case-hero reveal">
+        <div class="case-kicker">
+          <span>Selected work / 02</span>
+          <span>Full-stack web application</span>
+        </div>
+        <h1>Boniface &amp; Paulina Okafor Memorial Hospital</h1>
+        <p class="case-lede">An ASP.NET Core MVC hospital management platform connecting public hospital information, patient services, clinical workflows, and administration in one application.</p>
+
+        <dl class="case-facts">
+          <div><dt>Role</dt><dd>Full-stack developer</dd></div>
+          <div><dt>Status</dt><dd>In development</dd></div>
+          <div><dt>Year</dt><dd>2026</dd></div>
+          <div><dt>Platform</dt><dd>.NET 10 / SQL Server</dd></div>
+        </dl>
+      </section>
+
+      <div class="case-body">
+        <section class="case-section reveal">
+          <p class="eyebrow">01 / Problem</p>
+          <div class="case-copy">
+            <h2>One platform for connected hospital services.</h2>
+            <p>The application addresses fragmented communication and manual workflows by giving patients, clinicians, and administrators structured tools for accessing information, requesting care, and managing daily hospital operations.</p>
+          </div>
+        </section>
+
+        <section class="case-section reveal">
+          <p class="eyebrow">02 / Features</p>
+          <div class="case-copy">
+            <h2>Public access, patient care, and administration.</h2>
+            <p>Public pages introduce the hospital’s services, doctors, and departments. Authenticated experiences support appointment requests, teleconsultations, patient notifications, payments, donations, and operational management.</p>
+            <ul>
+              <li>Public hospital pages</li>
+              <li>Appointment requests</li>
+              <li>Teleconsultations</li>
+              <li>Secure patient portal</li>
+              <li>Administrative dashboard</li>
+              <li>Doctor and department management</li>
+              <li>Payments and donations</li>
+              <li>Real-time notifications</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-section reveal">
+          <p class="eyebrow">03 / Architecture</p>
+          <div class="case-copy">
+            <h2>Server-rendered foundations with focused interactivity.</h2>
+            <p>The platform uses ASP.NET Core MVC and Razor Views on .NET 10, with Entity Framework Core and SQL Server for relational data. ASP.NET Core Identity provides authentication and role-based authorization across patient, doctor, and administrator workflows.</p>
+            <p>Tailwind CSS and Bootstrap 5 support the responsive interface, Alpine.js handles lightweight client-side interactions, and SignalR enables real-time consultation and notification updates. Progressive Web App support improves installability and resilience when connectivity is limited.</p>
+          </div>
+        </section>
+
+        <section class="case-section reveal">
+          <p class="eyebrow">04 / Engineering</p>
+          <div class="case-copy">
+            <h2>Clear permissions and resilient interactions.</h2>
+            <p>One challenge was enforcing permissions across multiple user roles without spreading authorization rules throughout the application. Centralized policies and separated service boundaries keep access decisions consistent and business logic maintainable.</p>
+            <p>Another challenge was preserving a useful experience during inconsistent connectivity. Progressive caching, explicit connection-state handling, and synchronization-aware interfaces provide limited offline support without hiding the state of patient data from users.</p>
+          </div>
+        </section>
+      </div>
+
+      <section class="case-media">
+        <div class="case-media-inner">
+          <div class="case-media-heading reveal">
+            <p class="eyebrow">Project images</p>
+            <p>Replace these blocks when the interfaces are ready. Avoid showing real patient information in portfolio screenshots.</p>
+          </div>
+          <div class="media-grid media-grid--equal">
+            <div class="media-placeholder reveal" role="img" aria-label="Placeholder for hospital public website screenshot"><span>Public hospital pages<br />Recommended: 1600 × 1000</span></div>
+            <div class="media-placeholder reveal" role="img" aria-label="Placeholder for patient portal screenshot"><span>Patient portal<br />Use fictional patient data</span></div>
+            <div class="media-placeholder reveal" role="img" aria-label="Placeholder for administration dashboard screenshot"><span>Admin dashboard<br />Use fictional operational data</span></div>
+            <div class="media-placeholder reveal" role="img" aria-label="Placeholder for mobile PWA screenshot"><span>Mobile / PWA experience<br />Recommended: 750 × 1334</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-next">
+        <div>
+          <p class="eyebrow">Previous project</p>
+          <a href="clouded-basement.html">CloudedBasement.ca ↗</a>
+        </div>
+        <a href="../index.html#work">All work ↑</a>
+      </section>
+    </main>
+
+    <footer class="case-next">
+      <p>© <span id="year"></span> Nikkayo Williams</p>
+      <a href="../index.html#contact">Get in touch ↗</a>
+    </footer>
+  </body>
+</html>
