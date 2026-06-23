@@ -23,6 +23,6 @@ Before publishing:
 
 - Review the contact email, social links, and résumé whenever they change.
 - Confirm package scope and pricing before accepting client inquiries.
-- Replace the project screenshot placeholders with optimized WebP or AVIF images.
+- Add optimized WebP or AVIF images for each project case study.
 - Add a social-sharing image after final project screenshots are available.
 - Add the final domain to a `CNAME` file only when GitHub Pages hosting is configured.
