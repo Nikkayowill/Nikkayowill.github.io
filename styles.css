@@ -177,6 +177,10 @@ h1 em, .contact-link em { font-family: Georgia, serif; font-weight: 400; }
 .case-facts div { padding-right: 1.5rem; }
 .case-facts dt { margin-bottom: .6rem; color: var(--muted); font: .62rem/1 "DM Mono", monospace; text-transform: uppercase; }
 .case-facts dd { margin: 0; font-size: .85rem; line-height: 1.45; }
+.case-tags { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.25rem; }
+.case-tags span { padding: .45rem .65rem; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); font: .6rem/1 "DM Mono", monospace; text-transform: uppercase; }
+.case-actions { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1.25rem; font: .65rem/1 "DM Mono", monospace; text-transform: uppercase; }
+.case-actions a, .case-actions span { display: inline-flex; padding-bottom: .35rem; border-bottom: 1px solid currentColor; }
 .case-body { padding: 0 var(--pad) clamp(6rem, 12vw, 11rem); }
 .case-section { display: grid; grid-template-columns: 1fr 3fr; gap: 3rem; padding: clamp(4rem, 8vw, 7rem) 0; border-top: 1px solid var(--line); }
 .case-copy { max-width: 54rem; }
@@ -220,6 +224,7 @@ h1 em, .contact-link em { font-family: Georgia, serif; font-weight: 400; }
 .contact { min-height: 100svh; padding: 5rem var(--pad) 2rem; color: var(--paper); background: #2020d8; display: flex; flex-direction: column; justify-content: space-between; }
 .contact-top { display: flex; justify-content: space-between; border-bottom: 1px solid rgba(242,240,233,.35); padding-bottom: 1rem; }
 .contact-top > p:last-child { margin: 0; font-size: .8rem; }
+.contact-intent { max-width: 34rem; margin: 3rem 0 0; color: #c9c7ff; font-size: clamp(1rem, 1.5vw, 1.3rem); line-height: 1.55; }
 .contact-link { display: block; padding: 5rem 0; font-size: clamp(3.5rem, 10.4vw, 10rem); line-height: .86; letter-spacing: -.075em; }
 .contact-link span { display: block; transition: padding .5s cubic-bezier(.16,1,.3,1); }
 .contact-link span:last-child { padding-left: 8vw; }

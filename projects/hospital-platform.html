@@ -50,6 +50,17 @@
           <div><dt>Year</dt><dd>2026</dd></div>
           <div><dt>Platform</dt><dd>.NET 10 / SQL Server</dd></div>
         </dl>
+        <div class="case-tags" aria-label="Technologies used">
+          <span>ASP.NET Core MVC</span>
+          <span>SQL Server</span>
+          <span>Entity Framework Core</span>
+          <span>Identity</span>
+          <span>SignalR</span>
+          <span>PWA</span>
+        </div>
+        <div class="case-actions">
+          <span>Prototype case study</span>
+        </div>
       </section>
 
       <div class="case-body">
@@ -62,7 +73,20 @@
         </section>
 
         <section class="case-section reveal">
-          <p class="eyebrow">02 / Features</p>
+          <p class="eyebrow">02 / What I did</p>
+          <div class="case-copy">
+            <h2>Designed the structure for multiple hospital workflows.</h2>
+            <ul>
+              <li>Built public pages, patient flows, and administrative dashboard screens</li>
+              <li>Modeled role-based access for patients, doctors, and administrators</li>
+              <li>Implemented appointment, teleconsultation, notification, and management features</li>
+              <li>Planned resilient interactions with real-time updates and limited offline support</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="case-section reveal">
+          <p class="eyebrow">03 / Features</p>
           <div class="case-copy">
             <h2>Public access, patient care, and administration.</h2>
             <p>Public pages introduce the hospital’s services, doctors, and departments. Authenticated experiences support appointment requests, teleconsultations, patient notifications, payments, donations, and operational management.</p>
@@ -80,7 +104,7 @@
         </section>
 
         <section class="case-section reveal">
-          <p class="eyebrow">03 / Architecture</p>
+          <p class="eyebrow">04 / Architecture</p>
           <div class="case-copy">
             <h2>Server-rendered foundations with focused interactivity.</h2>
             <p>The platform uses ASP.NET Core MVC and Razor Views on .NET 10, with Entity Framework Core and SQL Server for relational data. ASP.NET Core Identity provides authentication and role-based authorization across patient, doctor, and administrator workflows.</p>
@@ -89,7 +113,7 @@
         </section>
 
         <section class="case-section reveal">
-          <p class="eyebrow">04 / Engineering</p>
+          <p class="eyebrow">05 / Engineering</p>
           <div class="case-copy">
             <h2>Clear permissions and resilient interactions.</h2>
             <p>One challenge was enforcing permissions across multiple user roles without spreading authorization rules throughout the application. Centralized policies and separated service boundaries keep access decisions consistent and business logic maintainable.</p>
