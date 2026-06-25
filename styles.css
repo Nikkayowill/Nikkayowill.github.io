@@ -190,9 +190,28 @@ h1 em, .contact-link em { font-family: Georgia, serif; font-weight: 400; }
 .case-media-heading p:last-child { max-width: 28rem; margin: 0; color: #aaa89f; font-size: .8rem; line-height: 1.5; }
 .media-grid { display: grid; grid-template-columns: 2fr 1fr; gap: 1rem; }
 .media-grid--equal { grid-template-columns: repeat(2, 1fr); }
+.media-grid--feature { grid-template-columns: repeat(2, 1fr); }
+.media-grid--feature .media-preview:first-child { grid-column: 1 / -1; }
 .media-preview { display: grid; min-height: clamp(20rem, 48vw, 48rem); place-items: center; padding: 2rem; border: 1px dashed rgba(242,240,233,.45); background: #1b1b1b; text-align: center; }
 .media-preview--portrait { min-height: clamp(20rem, 48vw, 48rem); }
+.media-preview--image { min-height: 0; padding: 0; overflow: hidden; aspect-ratio: 16 / 9; border-style: solid; }
+.media-preview--page { aspect-ratio: 4 / 3; background: #f4f6f7; }
+.media-preview--image img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.media-preview--page img { object-position: top center; }
+.media-preview--scaled img { width: 88%; height: 88%; object-fit: contain; object-position: top center; margin: auto; }
 .media-preview span { max-width: 18rem; color: #aaa89f; font: .65rem/1.6 "DM Mono", monospace; text-transform: uppercase; }
+.media-zoom { width: 100%; height: 100%; padding: 0; border: 0; color: inherit; background: transparent; cursor: zoom-in; }
+.media-zoom img { transition: transform .5s cubic-bezier(.16,1,.3,1), filter .5s ease; }
+.media-zoom:hover img { transform: scale(1.025); filter: brightness(1.08); }
+.media-zoom:focus-visible { outline: 3px solid var(--acid); outline-offset: -.45rem; }
+.image-lightbox { position: fixed; inset: 0; z-index: 90; display: grid; grid-template-rows: auto minmax(0, 1fr) auto; gap: 1rem; padding: clamp(1rem, 3vw, 2rem); color: var(--paper); background: rgba(7,7,7,.92); opacity: 0; pointer-events: none; transition: opacity .25s ease; }
+.image-lightbox.is-open { opacity: 1; pointer-events: auto; }
+.image-lightbox[hidden] { display: none; }
+.image-lightbox__close { justify-self: end; padding: .7rem .9rem; border: 1px solid rgba(242,240,233,.35); color: inherit; background: rgba(242,240,233,.08); font: .62rem/1 "DM Mono", monospace; text-transform: uppercase; cursor: pointer; }
+.image-lightbox__close:hover { background: var(--paper); color: var(--ink); }
+.image-lightbox__image { align-self: center; justify-self: center; display: block; max-width: 100%; max-height: 100%; object-fit: contain; box-shadow: 0 1.5rem 5rem rgba(0,0,0,.45); }
+.image-lightbox__caption { justify-self: center; max-width: 52rem; margin: 0; color: #c9c7bf; font-size: .8rem; line-height: 1.5; text-align: center; }
+.lightbox-open { overflow: hidden; }
 .case-next { display: flex; align-items: end; justify-content: space-between; gap: 2rem; padding: clamp(4rem, 8vw, 7rem) var(--pad); background: var(--acid); }
 .case-next p { margin: 0 0 1rem; }
 .case-next a { font-size: clamp(2.5rem, 7vw, 7rem); line-height: .9; letter-spacing: -.065em; }
@@ -267,8 +286,9 @@ footer > a { justify-self: end; }
   .case-section { grid-template-columns: 1fr; gap: 2rem; }
   .case-copy ul { grid-template-columns: 1fr; }
   .case-media-heading { display: grid; }
-  .media-grid, .media-grid--equal { grid-template-columns: 1fr; }
-  .media-preview, .media-preview--portrait { min-height: 19rem; }
+  .media-grid, .media-grid--equal, .media-grid--feature { grid-template-columns: 1fr; }
+  .media-grid--feature .media-preview:first-child { grid-column: auto; }
+  .media-preview:not(.media-preview--image), .media-preview--portrait { min-height: 19rem; }
   .case-next { align-items: start; flex-direction: column; }
   footer { grid-template-columns: 1fr auto; gap: 1.5rem; }
   footer div { grid-row: 2; }
